@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  moonresidences:
+    build: .
+    ports:
+      - "80:80"

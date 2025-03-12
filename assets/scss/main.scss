@@ -1,0 +1,484 @@
+@use "typography" as typo;
+@use "variables";
+@use "global";
+
+@use "tailwindcss";
+@use "tailwindcss-primeui";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: typo.$font-family;
+}
+
+.bg-dark-pattern {
+  .p-carousel-prev-button,
+  .p-carousel-next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: auto;
+  }
+
+  .p-carousel-prev-button {
+    left: 16px !important;
+  }
+
+  .p-carousel-next-button {
+    right: 16px !important;
+  }
+
+  @media (max-width: 768px) {
+    .p-carousel-prev-button {
+      left: 2px !important;
+    }
+
+    .p-carousel-next-button {
+      right: 2px !important;
+    }
+  }
+
+  .p-button-text.p-button-secondary:hover {
+    background: transparent !important;
+  }
+}
+
+.font-montserrat {
+  font-family: typo.$font-montserrat;
+}
+.font-roboto {
+  font-family: typo.$font-roboto;
+}
+
+// >>>>> Font Weight
+$font-weight-list: (300, 400, 500, 600, 700, 800, 900);
+
+// >>>>> flex-flow
+$flex-flow-list: (column, row);
+
+// >>>>> Font Sizes, Padding, Margin
+$size-list-fixed: (
+  auto: auto,
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+  11: 11px,
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  15: 15px,
+  16: 16px,
+  17: 17px,
+  18: 18px,
+  19: 19px,
+  20: 20px,
+  21: 21px,
+  22: 22px,
+  23: 23px,
+  24: 24px,
+  25: 25px,
+  26: 26px,
+  27: 27px,
+  28: 28px,
+  29: 29px,
+  30: 30px,
+  31: 31px,
+  32: 32px,
+  34: 34px,
+  35: 35px,
+  36: 36px,
+  38: 38px,
+  39: 39px,
+  40: 40px,
+);
+
+$size-list: (
+  auto: auto,
+  0: 0rem,
+  1: 0.1rem,
+  2: 0.2rem,
+  3: 0.3rem,
+  4: 0.4rem,
+  5: 0.5rem,
+  6: 0.6rem,
+  7: 0.7rem,
+  8: 0.8rem,
+  9: 0.9rem,
+  10: 1rem,
+  11: 1.1rem,
+  12: 1.2rem,
+  13: 1.3rem,
+  14: 1.4rem,
+  15: 1.5rem,
+  16: 1.6rem,
+  17: 1.7rem,
+  18: 1.8rem,
+  19: 1.9rem,
+  20: 2rem,
+  21: 2.1rem,
+  22: 2.2rem,
+  24: 2.4rem,
+  25: 2.5rem,
+  26: 2.6rem,
+  28: 2.8rem,
+  30: 3rem,
+  31: 3.1rem,
+  32: 3.2rem,
+  34: 3.4rem,
+  35: 3.5rem,
+  36: 3.6rem,
+  38: 3.8rem,
+  39: 3.8rem,
+  40: 4rem,
+  41: 4.1rem,
+  42: 4.2rem,
+  43: 4.3rem,
+  44: 4.4rem,
+  45: 4.5rem,
+  46: 4.6rem,
+  47: 4.7rem,
+  48: 4.8rem,
+  49: 4.9rem,
+  50: 5rem,
+);
+
+$opacity-list: 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1;
+
+// >>>>> List Position
+$position-list: (static, relative, fixed, absolute, sticky);
+
+// >>>>> List Display
+$display-list: (inline, block, contents, flex, grid, none);
+
+// >>>>> List Text Position
+$text-list: (center, start, end, justify);
+
+$align-list: (baseline, center, start, end);
+
+// >>>>> List Cursor
+$cursor-list: (pointer);
+
+$response-breakpoint: (
+  xs: "max-width:760px",
+  sm: "min-width:760px",
+  md: "min-width:992px",
+  lg: "min-width:1200px",
+  xl: "min-width:1920px",
+);
+
+@each $flow in $flex-flow-list {
+  .flex-flow-#{$flow} {
+    flex-flow: $flow !important;
+  }
+}
+
+@each $weight in $font-weight-list {
+  .fw-#{$weight} {
+    font-weight: $weight !important;
+  }
+}
+
+@each $position in $position-list {
+  .position-#{$position} {
+    position: $position !important;
+  }
+}
+
+@each $display in $display-list {
+  .display-#{$display} {
+    display: $display !important;
+  }
+  .d-#{$display} {
+    display: $display !important;
+  }
+}
+
+@each $text in $text-list {
+  .text-#{$text} {
+    text-align: $text !important;
+  }
+
+  .justify-content-#{$text} {
+    justify-content: $text !important;
+  }
+}
+
+@each $opacity in $opacity-list {
+  .opacity-#{$opacity * 10} {
+    opacity: $opacity !important;
+  }
+}
+
+@each $text in $align-list {
+  .align-items-#{$text} {
+    align-items: $text !important;
+  }
+
+  .self-#{$text} {
+    align-self: $text !important;
+  }
+}
+
+@each $cursor in $cursor-list {
+  .c-#{$cursor} {
+    cursor: $cursor !important;
+  }
+}
+
+@for $i from 1 through 100 {
+  .w-#{$i} {
+    width: #{$i} + "%" !important;
+  }
+}
+
+@each $size, $value in $size-list-fixed {
+  @if $size !=auto {
+    .ffs-#{$size} {
+      font-size: $value !important;
+    }
+  }
+
+  .fp-#{$size} {
+    padding: $value !important;
+  }
+
+  .fpt-#{$size} {
+    padding-top: $value !important;
+  }
+
+  .fpr-#{$size} {
+    padding-right: $value !important;
+  }
+
+  .fpb-#{$size} {
+    padding-bottom: $value !important;
+  }
+
+  .fpl-#{$size} {
+    padding-left: $value !important;
+  }
+
+  .fm-#{$size} {
+    margin: $value !important;
+  }
+
+  .fmx-#{$size} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .fmt-#{$size} {
+    margin-top: $value !important;
+  }
+
+  .fmr-#{$size} {
+    margin-right: $value !important;
+  }
+
+  .fmb-#{$size} {
+    margin-bottom: $value !important;
+  }
+
+  .fml-#{$size} {
+    margin-left: $value !important;
+  }
+}
+
+@each $key, $val in $response-breakpoint {
+  @media only screen and (#{$val}) {
+    @each $flow in $flex-flow-list {
+      .#{$key}-flex-flow-#{$flow} {
+        flex-flow: $flow !important;
+      }
+    }
+
+    @each $display in $display-list {
+      .#{$key}-display-#{$display} {
+        display: $display !important;
+      }
+      .#{$key}-d-#{$display} {
+        display: $display !important;
+      }
+    }
+
+    @each $text in $align-list {
+      .#{$key}-align-items-#{$text} {
+        align-items: $text !important;
+      }
+
+      .#{$key}-self-#{$text} {
+        align-self: $text !important;
+      }
+    }
+
+    @each $text in $text-list {
+      .#{$key}-text-#{$text} {
+        text-align: $text !important;
+      }
+
+      .#{$key}-justify-content-#{$text} {
+        justify-content: $text !important;
+      }
+    }
+
+    @for $i from 1 through 100 {
+      .#{$key}-w-#{$i} {
+        width: #{$i} + "%" !important;
+      }
+    }
+
+    @each $text in $text-list {
+      .#{$key}-text-#{$text} {
+        text-align: $text !important;
+      }
+    }
+
+    @each $size, $value in $size-list-fixed {
+      @if $size !=auto {
+        .ffs-#{$key}-#{$size} {
+          font-size: $value !important;
+        }
+      }
+
+      .fp-#{$key}-#{$size} {
+        padding: $value !important;
+      }
+
+      .fpt-#{$key}-#{$size} {
+        padding-top: $value !important;
+      }
+
+      .fpr-#{$key}-#{$size} {
+        padding-right: $value !important;
+      }
+
+      .fpb-#{$key}-#{$size} {
+        padding-bottom: $value !important;
+      }
+
+      .fpl-#{$key}-#{$size} {
+        padding-left: $value !important;
+      }
+
+      .fm-#{$key}-#{$size} {
+        margin: $value !important;
+      }
+
+      .fmx-#{$key}-#{$size} {
+        margin-left: $value !important;
+        margin-right: $value !important;
+      }
+
+      .fmt-#{$key}-#{$size} {
+        margin-top: $value !important;
+      }
+
+      .fmr-#{$key}-#{$size} {
+        margin-right: $value !important;
+      }
+
+      .fmb-#{$key}-#{$size} {
+        margin-bottom: $value !important;
+      }
+
+      .fml-#{$key}-#{$size} {
+        margin-left: $value !important;
+      }
+    }
+
+    @each $size, $value in $size-list {
+      @if $size !=auto {
+        .fs-#{$key}-#{$size} {
+          font-size: $value !important;
+        }
+      }
+    }
+  }
+}
+
+@each $size, $value in $size-list {
+  @if $size !=auto {
+    .fs-#{$size} {
+      font-size: $value !important;
+    }
+  }
+
+  .p-#{$size} {
+    padding: $value !important;
+  }
+
+  .px-#{$size} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .py-#{$size} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+
+  .pt-#{$size} {
+    padding-top: $value !important;
+  }
+
+  .pr-#{$size} {
+    padding-right: $value !important;
+  }
+
+  .pb-#{$size} {
+    padding-bottom: $value !important;
+  }
+
+  .pl-#{$size} {
+    padding-left: $value !important;
+  }
+
+  .m-#{$size} {
+    margin: $value !important;
+  }
+
+  .mx-#{$size} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+  .my-#{$size} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .mt-#{$size} {
+    margin-top: $value !important;
+  }
+
+  .mr-#{$size} {
+    margin-right: $value !important;
+  }
+
+  .mb-#{$size} {
+    margin-bottom: $value !important;
+  }
+
+  .ml-#{$size} {
+    margin-left: $value !important;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
