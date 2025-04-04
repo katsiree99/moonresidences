@@ -10,7 +10,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  target: "static",
   app: {
     head: {
       htmlAttrs: {
@@ -28,9 +27,6 @@ export default defineNuxtConfig({
           content: "width=device-width, initial-scale=1, maximum-scale=5",
         },
       ],
-      __dangerouslyDisableSanitizersByTagID: {
-        "elementor-frontend-js-before": ["innerHTML"],
-      },
     },
   },
   css: [
@@ -55,9 +51,12 @@ export default defineNuxtConfig({
   },
   ssr: false,
   nitro: {
-    preset: "static",
+    preset: "cloudflare-pages",
   },
-  app: {
-    baseURL: "/",
+  runtimeConfig: {
+    public: {
+      GDRIVE_API_KEY: process.env.GDRIVE_API_KEY,
+      GDRIVE_FOLDER_ID: process.env.GDRIVE_FOLDER_ID,
+    },
   },
 });

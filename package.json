@@ -18,6 +18,7 @@
     "primevue": "^4.3.1",
     "tailwindcss-primeui": "^0.5.1",
     "vue": "latest",
+    "vue-easy-lightbox": "^1.19.0",
     "vue-router": "latest"
   },
   "devDependencies": {
