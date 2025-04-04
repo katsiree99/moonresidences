@@ -98,9 +98,11 @@ const partners = ref([
 
 <style lang="scss" scoped>
 .bg-dark-pattern {
-  background: url("@/assets/images/texture-1.webp");
+  background: url("/images/gallery/IMG_0918.JPG") center/cover no-repeat;
+  background-size: cover;
   background-blend-mode: multiply;
   padding: 6rem 2rem;
+  background-color: rgba(0, 0, 0, 0.54);
 }
 
 .gold-line {

@@ -180,7 +180,7 @@ const apartments = ref([
 }
 
 .bg-dark-pattern {
-  background-image: url("@/assets/images/texture-2.webp");
+  background-image: url("/images/gallery/IMG_0397.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 9rem;
