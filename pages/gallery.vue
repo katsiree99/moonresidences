@@ -258,7 +258,7 @@ const allImages = ref<any[]>([
 
 const nextPageToken = ref("");
 const page = ref(1);
-const imagesPerPage = 24;
+const imagesPerPage = 16;
 const isLoading = ref(false);
 const scrollTrigger = ref<HTMLElement | null>(null);
 
