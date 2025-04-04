@@ -208,7 +208,7 @@ import Button from "primevue/button";
 import Calendar from "primevue/calendar";
 import Message from "primevue/message";
 
-import contactBg from "@/assets/images/Contact-us.webp";
+import contactBg from "/images/gallery/IMG_0406.JPG";
 
 useHead({
   title: "Contact Us",
