@@ -60,7 +60,7 @@ const services = ref([
 
 <style scoped lang="scss">
 .lifestyle-section {
-  background: url("@/assets/images/texture-1.webp") center/cover no-repeat;
+  background: url("@/assets/images/texture-1_1.webp") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 6rem 2rem;

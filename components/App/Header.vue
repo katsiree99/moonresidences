@@ -183,6 +183,7 @@ const isScrolled = ref(false);
 const isMobile = ref(false);
 const menuItems = ref([
   { label: "Home", path: "/" },
+  { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ]);
 

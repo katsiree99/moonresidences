@@ -43,14 +43,14 @@
     >
       <div class="relative z-10 mb-10">
         <img
-          src="@/assets/images/Golden-Sq._-3.jpg"
+          src="@/assets/images/Golden-Sq._-1.jpg"
           alt="Bedroom"
           class="shadow-lg"
         />
       </div>
-      <div class="relative z-0 mb-10 hidden xl:!grid">
+      <div class="relative z-0 mb-10 hidden md:!grid">
         <img
-          src="@/assets/images/1-Golden-3885-scaled.webp"
+          src="@/assets/images/Golden-Sq._-2.jpg"
           alt="Living Room"
           class="shadow-lg"
         />
@@ -114,7 +114,8 @@
 import { ref, onMounted, nextTick } from "vue";
 import Carousel from "primevue/carousel";
 
-import image1 from "@/assets/images/1-Golden-3885-scaled.webp";
+import image1 from "@/assets/images/1-Golden-3885-scaled.jpg";
+import image2 from "@/assets/images/2-Golden-3885-scaled.jpg";
 
 const apartments = ref([
   {
@@ -127,7 +128,7 @@ const apartments = ref([
     title: "Luxury Suite 310",
     description:
       "The lovely Golden Square garden is right on your doorstep, and it will allow you to step outside to enjoy a refreshing/unique green space in the heart of town. The area is abundant for all type and range restaurants, as well as for coffee shops and rooftop bars. Carnaby and Regents St are 2-min walk away for keen shoppers.",
-    image: image1,
+    image: image2,
   },
 ]);
 </script>
