@@ -320,7 +320,7 @@ const submitForm = () => {
 }
 
 .bg-dark-pattern {
-  background: url("/images/gallery/IMG_0406.JPG") no-repeat;
+  background: url("/images/gallery/IMG_0469.JPG") no-repeat;
   background-size: cover;
   background-position: center;
 }
