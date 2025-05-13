@@ -185,10 +185,9 @@
       <!-- Map -->
       <div class="flex justify-center">
         <iframe
-          class="w-full max-w-3xl h-80 shadow-lg rounded-lg"
+          class="w-full max-w-3xl h-100 shadow-lg rounded-lg"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d287.8307386999173!2d98.2921234!3d7.915586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b13b6c587e1%3A0x883172a456ccbff6!2sMoon%20Beach%20Villa%20Patong!5e1!3m2!1sth!2sth!4v1741704565668!5m2!1sth!2sth"
           style="border: 0"
-          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -208,7 +207,7 @@ import Button from "primevue/button";
 import Calendar from "primevue/calendar";
 import Message from "primevue/message";
 
-import contactBg from "@/assets/images/Contact-us.webp";
+import contactBg from "/images/gallery/IMG_0406.JPG";
 
 useHead({
   title: "Contact Us",
@@ -320,7 +319,7 @@ const submitForm = () => {
 }
 
 .bg-dark-pattern {
-  background: url("@/assets/images/texture-1.webp");
+  background: url("/images/gallery/IMG_0469.JPG") no-repeat;
   background-size: cover;
   background-position: center;
 }

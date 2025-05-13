@@ -12,7 +12,7 @@
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-9 fw-300">Call us</p>
+            <p class="fs-9 fw-300">{{ t("callUs") }}</p>
             <p class="fs-9 fw-500 flex items-center">
               <a href="tel:+442081583244" class="hover:text-blue-500">
                 +44 (0)20 8158 3244
@@ -43,7 +43,7 @@
 
         <div class="flex items-center gap-5">
           <div class="text-right font-roboto">
-            <p class="fs-9 fw-300">Email us</p>
+            <p class="fs-9 fw-300">{{ t("emailUs") }}</p>
             <p class="fs-9 fw-500">
               <a
                 href="mailto:stay@moonresidences.com"
@@ -75,7 +75,10 @@
         </ul>
         <div class="nav-right">
           <i class="pi pi-heart" style="font-size: 1.8rem"></i>
-          <button style="margin: 17px 0" class="book-now">BOOK NOW</button>
+          <button style="margin: 17px 0" class="book-now">
+            {{ t("bookNow") }}
+          </button>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>
@@ -99,10 +102,6 @@
           </div>
           <div class="icons text-end px-10">
             <i
-              class="pi pi-heart mr-16 text-[#EEE3C3]"
-              style="font-size: 1.3rem"
-            ></i>
-            <i
               class="pi pi-bars text-[#EEE3C3]"
               style="cursor: pointer; font-size: 1.8rem"
               @click="toggleMenu"
@@ -122,6 +121,7 @@
               }}</NuxtLink>
             </li>
           </ul>
+          <LanguageSwitcher />
         </div>
       </div>
       <div class="mobile-contact-info px-12 py-5">
@@ -132,7 +132,7 @@
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">Call us</p>
+            <p class="fs-7 text-[#FFFFFF] fw-300">{{ t("callUs") }}</p>
             <p class="fs-8 text-[#FFFFFF] fw-400 flex items-center">
               <a href="tel:+442081583244" class="hover:text-blue-500">
                 +44 (0)20 8158 3244
@@ -157,7 +157,7 @@
             class="pi pi-envelope text-[#EEE3C3] fs-12"
           ></i>
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">Email us</p>
+            <p class="fs-7 text-[#FFFFFF] fw-300">{{ t("emailUs") }}</p>
             <p class="fs-8 text-[#FFFFFF] fw-400">
               <a
                 href="mailto:stay@moonresidences.com"
@@ -169,22 +169,39 @@
         </div>
       </div>
       <div class="px-12">
-        <button style="margin: 2px 0 10px 0" class="book-now">BOOK NOW</button>
+        <button style="margin: 2px 0 10px 0" class="book-now">
+          {{ t("bookNow") }}
+        </button>
       </div>
     </div>
   </header>
 </template>
 
-<script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted, computed } from "vue";
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 
 const mobileMenu = ref(false);
 const isScrolled = ref(false);
 const isMobile = ref(false);
-const menuItems = ref([
-  { label: "Home", path: "/" },
-  { label: "Contact", path: "/contact" },
-]);
+import { useI18n } from "vue-i18n";
+
+const { t, locale } = useI18n();
+
+const menuItems = computed(() => {
+  const get = (key: string) => {
+    const val = t(key);
+    return typeof val === "string"
+      ? val.charAt(0).toUpperCase() + val.slice(1)
+      : val;
+  };
+
+  return [
+    { label: get("home"), path: "/" },
+    { label: get("gallery"), path: "/gallery" },
+    { label: get("contact"), path: "/contact" },
+  ];
+});
 
 const toggleMenu = () => {
   mobileMenu.value = !mobileMenu.value;

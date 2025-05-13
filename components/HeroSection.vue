@@ -6,17 +6,29 @@
       <div class="background-image"></div>
 
       <div class="video-background">
-        <iframe
+        <!-- <iframe
           src="https://www.youtube.com/embed/1yakUOhGKm4?autoplay=1&mute=1&loop=1&playlist=1yakUOhGKm4&controls=0&showinfo=0&modestbranding=1&playsinline=1"
           frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
-        ></iframe>
+        ></iframe> -->
+        <img
+          src="/images/gallery/IMG_0762.JPG"
+          alt="Hero Image"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+          "
+        />
       </div>
 
       <div class="hero-content">
-        <h1>Stay in Luxury</h1>
-        <p>WHERE CLASSY MAYFAIR MEETS VIBRANT SOHO</p>
+        <h1>{{ $t("heroTitle") }}</h1>
+        <p>{{ $t("heroSubtitle") }}</p>
       </div>
     </section>
   </div>

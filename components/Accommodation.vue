@@ -3,29 +3,23 @@
     <div class="max-w-6xl mx-auto text-center">
       <div class="gold-line"></div>
       <h2 class="text-4xl font-serif font-bold title mb-4">
-        Curated Accommodation
+        {{ $t("relaxTitle") }}
       </h2>
       <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
       <p class="max-w-9xl mx-auto section-1">
-        Boasting a collection of 22 serviced residences, with beautifully
-        appointed bedrooms – enhanced by colour and texture. Exquisite marble
-        and gilded finishes work in harmony.
+        {{ $t("relaxSubtitle") }}
       </p>
     </div>
 
     <div
-      class="grid sm:grid-cols-1 md:grid-cols-2 gap-x-12 mt-10 max-w-4xl mx-auto hidden xl:!grid"
+      class="grid sm:grid-cols-1 md:grid-cols-1 gap-x-12 mt-10 max-w-4xl mx-auto hidden xl:!grid"
     >
       <div>
         <p class="fs-10 fw-100">
-          Each 1, 2 and 3-bed apartment showcases a bespoke project, with varied
-          layouts, kitchen configurations and handmade joinery resulting in
-          distinct features. Every space combines enduring contemporary design,
-          with practicality, to create truly modern residences. Fit for all
-          purposes and enhanced by an intelligent arrangement of space.
+          {{ $t("relaxDescription") }}
         </p>
       </div>
-      <div>
+      <!-- <div>
         <p class="fs-10 fw-100">
           Sleep well surrounded by fine wallpapers and soft furnishings that
           reflect the woollen and yarn heritage of Golden Square. Plush textiles
@@ -33,7 +27,7 @@
           luxe. An oasis of calm and a place to retreat, yet every residence has
           the ability to be utilised as a convivial, welcoming space.
         </p>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -43,14 +37,14 @@
     >
       <div class="relative z-10 mb-10">
         <img
-          src="@/assets/images/Golden-Sq._-3.jpg"
+          src="@/assets/images/Golden-Sq._-1.jpg"
           alt="Bedroom"
           class="shadow-lg"
         />
       </div>
-      <div class="relative z-0 mb-10 hidden xl:!grid">
+      <div class="relative z-0 mb-10 hidden md:!grid">
         <img
-          src="@/assets/images/1-Golden-3885-scaled.webp"
+          src="@/assets/images/Golden-Sq._-2.jpg"
           alt="Living Room"
           class="shadow-lg"
         />
@@ -65,8 +59,8 @@
         :numScroll="1"
         circular
         autoplayInterval="5000"
-        :showNavigators="true"
-        :showIndicators="true"
+        :showNavigators="false"
+        :showIndicators="false"
       >
         <template #item="{ data }">
           <div class="relative overflow-hidden">
@@ -81,12 +75,25 @@
             >
               <div class="fade-slide">
                 <h3 class="">
-                  {{ data.title }}
+                  {{ $t(data.title) }}
                 </h3>
 
-                <p class="text-lg max-w-4xl leading-relaxed">
+                <!-- <p class="text-lg max-w-4xl leading-relaxed">
                   {{ data.description }}
-                </p>
+                </p> -->
+
+                <ul
+                  class="space-y-2 text-white text-base leading-relaxed max-w-3xl"
+                >
+                  <li
+                    v-for="key in data.features"
+                    :key="key"
+                    class="flex items-start gap-2"
+                  >
+                    <span class="mt-1">•</span>
+                    <span>{{ $t(key) }}</span>
+                  </li>
+                </ul>
 
                 <button
                   class="border-1 border-white bg-[#53414c] text-white transition mt-5 btn-availability"
@@ -101,11 +108,12 @@
     </div>
 
     <div class="text-center mt-10">
-      <button
-        class="border-1 border-white px-16 py-10 bg-[#53414c] text-white transition text-lg fw-400"
+      <NuxtLink
+        to="/gallery"
+        class="inline-block border border-white px-16 py-10 bg-[#53414c] text-white transition text-lg fw-400 text-center"
       >
-        VIEW ALL APARTMENTS
-      </button>
+        VIEW ALL VILLA
+      </NuxtLink>
     </div>
   </section>
 </template>
@@ -114,19 +122,19 @@
 import { ref, onMounted, nextTick } from "vue";
 import Carousel from "primevue/carousel";
 
-import image1 from "@/assets/images/1-Golden-3885-scaled.webp";
+import image1 from "@/assets/images/1-Golden-3885-scaled.jpg";
+// import image2 from "@/assets/images/2-Golden-3885-scaled.jpg";
 
 const apartments = ref([
   {
-    title: "2-bed Superior Apt 208",
-    description:
-      "The lovely Golden Square garden is right on your doorstep, and it will allow you to step outside to enjoy a refreshing/unique green space in the heart of town. The area is abundant for all type and range restaurants, as well as for coffee shops and rooftop bars. Carnaby and Regents St are 2-min walk away for keen shoppers.",
-    image: image1,
-  },
-  {
-    title: "Luxury Suite 310",
-    description:
-      "The lovely Golden Square garden is right on your doorstep, and it will allow you to step outside to enjoy a refreshing/unique green space in the heart of town. The area is abundant for all type and range restaurants, as well as for coffee shops and rooftop bars. Carnaby and Regents St are 2-min walk away for keen shoppers.",
+    title: "villaFeatures.title",
+    features: [
+      "villaFeatures.suite",
+      "villaFeatures.bathroom",
+      "villaFeatures.living",
+      "villaFeatures.kitchen",
+      "villaFeatures.extras",
+    ],
     image: image1,
   },
 ]);
@@ -179,7 +187,7 @@ const apartments = ref([
 }
 
 .bg-dark-pattern {
-  background-image: url("@/assets/images/texture-2.webp");
+  background-image: url("/images/gallery/IMG_0397.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 9rem;

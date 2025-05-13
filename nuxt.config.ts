@@ -1,8 +1,14 @@
+import { defineNuxtConfig } from "nuxt/config";
 import Aura from "@primeuix/themes/aura";
-import PrimeUI from "tailwindcss-primeui";
+
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
-  modules: ["@primevue/nuxt-module"],
+  modules: ["@primevue/nuxt-module", "@nuxtjs/i18n"],
+
   primevue: {
     options: {
       theme: {
@@ -10,7 +16,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  target: "static",
+
   app: {
     head: {
       htmlAttrs: {
@@ -28,24 +34,38 @@ export default defineNuxtConfig({
           content: "width=device-width, initial-scale=1, maximum-scale=5",
         },
       ],
-      __dangerouslyDisableSanitizersByTagID: {
-        "elementor-frontend-js-before": ["innerHTML"],
-      },
     },
   },
+
+  i18n: {
+    strategy: "no_prefix",
+    lazy: true,
+    langDir: resolve(__dirname, "locales/"),
+    locales: [
+      { code: "en", name: "English", file: "en.json", iso: "en-US" },
+      { code: "th", name: "ไทย", file: "th.json", iso: "th-TH" },
+    ],
+    defaultLocale: "en",
+  },
+
   css: [
     "@/assets/scss/main.scss",
     "primeicons/primeicons.css",
     "~/assets/css/tailwind.css",
   ],
+
   compatibilityDate: "2024-11-01",
+
   devtools: { enabled: true },
+
   dir: {
     plugins: "~/plugins",
   },
+
   build: {
     transpile: ["@tailwindcss/vite", "primevue"],
   },
+
   postcss: {
     plugins: {
       "tailwindcss/nesting": {},
@@ -53,11 +73,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   ssr: false,
+
   nitro: {
-    preset: "static",
-  },
-  app: {
-    baseURL: "/",
+    preset: "cloudflare-pages",
   },
 });

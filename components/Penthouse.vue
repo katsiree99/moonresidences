@@ -3,7 +3,7 @@
     <div class="relative overflow-hidden shadow-lg img">
       <div class="absolute inset-0">
         <img
-          src="@/assets/images/banner-penthouse.webp"
+          src="@/assets/images/banner-penthouse_1.jpg"
           alt="The Penthouse"
           class="w-full h-full object-cover"
         />
@@ -14,9 +14,12 @@
         class="relative text-center text-white z-10 flex flex-col items-center justify-center h-full"
       >
         <h1 class="title">The Penthouse</h1>
-        <button class="bg-[#c4a47c] transition font-roboto btn-virtual">
-          Virtual Tour
-        </button>
+
+        <NuxtLink
+          to="/gallery"
+          class="bg-[#c4a47c] transition font-roboto btn-virtual"
+          >Virtual Tour
+        </NuxtLink>
       </div>
     </div>
     <div class="container">
@@ -92,8 +95,9 @@
 <script setup>
 import { ref } from "vue";
 
-import image1 from "@/assets/images/Golden-Sq._-3.jpg";
-import image2 from "@/assets/images/1-Golden-3885-scaled.webp";
+import image1 from "@/assets/images/section-penthouse_1.jpg";
+import image2 from "@/assets/images/section-penthouse_2.jpg";
+import image3 from "@/assets/images/section-penthouse_3.jpg";
 
 const imageGrid = ref([
   {
@@ -107,7 +111,7 @@ const imageGrid = ref([
     caption: "Penthouse Outdoor Space",
   },
   {
-    src: image2,
+    src: image3,
     alt: "Penthouse Master Bedroom",
     caption: "Penthouse Master Bedroom",
   },

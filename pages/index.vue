@@ -38,8 +38,8 @@ const router = useRouter();
   <TrustedPartners />
   <PreciousAddress />
   <Discover />
-  <GoldenMembers />
-  <NewsletterSignup />
+  <!-- <GoldenMembers /> -->
+  <!-- <NewsletterSignup /> -->
 </template>
 
 <style scoped lang="scss"></style>

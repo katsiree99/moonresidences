@@ -1,34 +1,31 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import icon1 from "@/assets/images/Untitled-2.webp";
-import icon2 from "@/assets/images/Untitled-1-01-1024x1024.webp";
-import icon3 from "@/assets/images/Untitled-1-02-1024x1024.webp";
-import icon4 from "@/assets/images/icon-1.webp";
+import icon1 from "@/assets/images/Untitled-1-01-1024x1024.webp";
+import icon2 from "@/assets/images/Untitled-1-02-1024x1024.webp";
+import icon3 from "@/assets/images/icon-1.webp";
+import icon4 from "@/assets/images/Untitled-2.webp";
 
 const services = ref([
   {
     icon: icon1,
-    title: "24/7 Reception",
-    description:
-      "Our dedicated Reception service is on hand around the clock to help you get the best from your stay.",
+    title: "features.connectivity.title",
+    description: "features.connectivity.description",
   },
   {
     icon: icon2,
-    title: "Secure, Reliable WiFi",
-    description:
-      "Secure, fast WiFi is available in all rooms of the apartments, allowing you to get work done and take part in meetings.",
+    title: "features.airport.title",
+    description: "features.airport.description",
   },
   {
     icon: icon3,
-    title: "Free Luggage Drop-Off",
-    description:
-      "Never too early, nor too late to arrive; we'll keep your luggage.",
+    title: "features.amenities.title",
+    description: "features.amenities.description",
   },
   {
     icon: icon4,
-    title: "Complimentary Housekeeping",
-    description: "Your home cleaned every 4 nights you stay with us.",
+    title: "features.hospitality.title",
+    description: "features.hospitality.description",
   },
 ]);
 </script>
@@ -38,7 +35,7 @@ const services = ref([
     <div class="container">
       <div class="header">
         <div class="gold-line"></div>
-        <h2 class="title">Lifestyle Serviced Residences</h2>
+        <h2 class="title">{{ $t(`features.comfort.title`) }}</h2>
       </div>
 
       <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -50,8 +47,8 @@ const services = ref([
           <div class="icon-wrapper">
             <img :src="service.icon" alt="" />
           </div>
-          <h3 class="service-title">{{ service.title }}</h3>
-          <p class="service-description">{{ service.description }}</p>
+          <h3 class="service-title">{{ $t(service.title) }}</h3>
+          <p class="service-description">{{ $t(service.description) }}</p>
         </div>
       </div>
     </div>
@@ -60,7 +57,7 @@ const services = ref([
 
 <style scoped lang="scss">
 .lifestyle-section {
-  background: url("@/assets/images/texture-1.webp") center/cover no-repeat;
+  background: url("@/assets/images/texture-1_1.webp") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 6rem 2rem;

@@ -20,7 +20,7 @@ const features = ref([
 <template>
   <section class="features-section mx-auto">
     <div class="container">
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 hidden xl:!grid">
+      <!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 hidden xl:!grid">
         <div
           v-for="(feature, index) in features"
           :key="index"
@@ -29,11 +29,9 @@ const features = ref([
           <i :class="feature.icon" class="feature-icon"></i>
           <h3 class="feature-title fw-400" v-html="feature.title"></h3>
         </div>
-      </div>
+      </div> -->
       <p class="description">
-        Exceptional craftmanship meets ultra-premium fittings. 37GS Residences
-        has been created in collaboration with forward thinking interior
-        designers March & White. Truly your London home away from home.
+        {{ $t("heroDescription") }}
       </p>
     </div>
   </section>
@@ -92,7 +90,7 @@ const features = ref([
   font-weight: 400;
   line-height: 1.4em;
   letter-spacing: 2px;
-  margin: 6rem auto 0 auto;
+  margin: 0rem auto 0 auto;
   max-width: 1050px;
   word-break: break-all;
   text-align: center;

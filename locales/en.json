@@ -1,0 +1,43 @@
+{
+    "home": "Home",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "bookNow": "BOOK NOW",
+    "callUs": "Call us",
+    "emailUs": "Email us",
+    "heroTitle": "Welcome to Moon Beach Villa",
+    "heroSubtitle": "Your Private Paradise in Patong, Phuket",
+    "heroDescription": "Discover the ultimate escape at Moon Beach Villa, a modern 3-story private sanctuary just moments from the white sands and crystal-clear waters of Patong Beach. Embrace the freedom of beachfront living with panoramic sea views that soothe the soul, morning to night.",
+    "features": {
+        "comfort": {
+            "title": "Stylish Living, Effortless Comfort"
+        },
+        "connectivity": {
+            "title": "Seamless Connectivity for Work & Leisure",
+            "description": "Stay connected with lightning-fast, secure Wi-Fi available throughout the villa—perfect for digital nomads or those who just want to stream and surf without interruption."
+        },
+        "airport": {
+            "title": "Airport Transfers Made Easy",
+            "description": "Start your vacation stress-free with our convenient airport pick-up and drop-off service—designed to make your journey as smooth as your stay."
+        },
+        "amenities": {
+            "title": "Thoughtfully Curated Amenities",
+            "description": "Let us take care of the little things. Enjoy daily housekeeping, complimentary snacks, and refreshing soft drinks that make you feel right at home from the moment you arrive."
+        },
+        "hospitality": {
+            "title": "Warm, Personalized Hospitality",
+            "description": "Our dedicated team is here to make your stay effortless and memorable. Whether it’s arranging local tours, offering insider tips, or fulfilling special requests, we’re here every step of the way."
+        }
+    },
+    "relaxTitle": "Relax in Refined Spaces",
+    "relaxSubtitle": "Unwind in a spacious, 3-level villa crowned with a rooftop haven. Every corner has been  meticulously crafted to elevate your stay—whether you're gathering with friends, enjoying family time, or savoring a romantic retreat.",
+    "relaxDescription": "From panoramic sea views and open living spaces to a fully equipped kitchen, BBQ corner, outdoor dining area, and a private infinity edge pool with coral beach vibe—every detail invites you to slow down, breathe in, and truly feel at home.",
+    "villaFeatures": {
+        "title": "3-Bedroom Pool Villa",
+        "suite": "Private Suite: 3 Bedrooms",
+        "bathroom": "Bathroom: 3 rooms",
+        "living": "Spacious Living Area",
+        "kitchen": "Modern Kitchen Suite",
+        "extras": "Private Rooftop, Infinity Pool, Grill & Chill Zone, Exclusive Parking Space"
+    }
+}

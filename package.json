@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "@nuxt/devtools": "^2.2.1",
+    "@nuxtjs/i18n": "^9.5.4",
     "@primeuix/themes": "^1.0.0",
+    "@primevue/forms": "^4.3.4",
     "@tailwindcss/vite": "^4.0.9",
     "nuxt": "^3.15.4",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.1",
     "tailwindcss-primeui": "^0.5.1",
     "vue": "latest",
+    "vue-easy-lightbox": "^1.19.0",
     "vue-router": "latest"
   },
   "devDependencies": {
