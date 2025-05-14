@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+
+const { t, locale } = useI18n();
+const heroTitle = computed(() => t("heroTitle"));
+const heroSubtitle = computed(() => t("heroSubtitle"));
+</script>
 
 <template>
   <div>
@@ -27,8 +34,8 @@
       </div>
 
       <div class="hero-content">
-        <h1>{{ $t("heroTitle") }}</h1>
-        <p>{{ $t("heroSubtitle") }}</p>
+        <h1>{{ heroTitle }}</h1>
+        <p>{{ heroSubtitle }}</p>
       </div>
     </section>
   </div>
@@ -54,7 +61,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("@/assets/images/mobile-header.webp") center/cover no-repeat;
+  background: url("/images/gallery/IMG_0762.JPG") center/cover no-repeat;
   z-index: -2;
 }
 

@@ -48,7 +48,7 @@
                 (+66) 61 405 5575
               </a>
               <a
-                href="https://wa.me/66614055575"
+                href="https://api.whatsapp.com/message/XZMZJWGWK4FAO1"
                 target="_blank"
                 class="hover:text-green-500 ml-2 flex items-center"
               >
@@ -72,7 +72,7 @@
 
             <li class="flex items-center text-[#54595f] c-pointer">
               <a
-                href="https://line.me/R/ti/p/@mooonbeachvilla"
+                href="https://line.me/R/ti/p/@613cxrry"
                 target="_blank"
                 class="flex hover:text-blue-500"
               >
@@ -88,7 +88,7 @@
 
             <li class="flex items-center text-[#54595f] c-pointer">
               <a
-                href="https://www.facebook.com/MoonBeachVillaPatoong"
+                href="https://www.facebook.com/people/Moon-Beach-Villa-Patong/61574416492308/"
                 target="_blank"
                 class="hover:text-blue-500"
               >
@@ -99,7 +99,7 @@
 
             <li class="flex items-center text-[#54595f] c-pointer">
               <a
-                href="https://www.instagram.com/mooonbeachvilla"
+                href="https://www.instagram.com/moonbeachvilla/"
                 target="_blank"
                 class="hover:text-blue-500"
               >
@@ -113,7 +113,7 @@
         <div class="flex justify-center space-x-6 text-[#53414c] mb-8 mt-20">
           <div class="transition">
             <a
-              href="https://line.me/R/ti/p/@mooonbeachvilla"
+              href="https://line.me/R/ti/p/@613cxrry"
               target="_blank"
               rel="noopener"
             >
@@ -123,7 +123,7 @@
           </div>
           <div class="transition">
             <a
-              href="https://www.facebook.com/MoonBeachVillaPatoong"
+              href="https://www.facebook.com/people/Moon-Beach-Villa-Patong/61574416492308/"
               target="_blank"
               rel="noopener"
             >
@@ -132,7 +132,7 @@
           </div>
           <div class="transition">
             <a
-              href="https://www.instagram.com/mooonbeachvilla"
+              href="https://www.instagram.com/moonbeachvilla/"
               target="_blank"
               rel="noopener"
             >

@@ -12,13 +12,13 @@
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-9 fw-300">{{ t("callUs") }}</p>
+            <p class="fs-9 fw-300">{{ $t("callUs") }}</p>
             <p class="fs-9 fw-500 flex items-center">
               <a href="tel:+66614055575" class="hover:text-blue-500">
                 (+66) 61 405 5575
               </a>
               <a
-                href="https://wa.me/66614055575"
+                href="https://api.whatsapp.com/message/XZMZJWGWK4FAO1"
                 target="_blank"
                 class="hover:text-green-500 ml-2"
               >
@@ -43,7 +43,7 @@
 
         <div class="flex items-center gap-5">
           <div class="text-right font-roboto">
-            <p class="fs-9 fw-300">{{ t("emailUs") }}</p>
+            <p class="fs-9 fw-300">{{ $t("emailUs") }}</p>
             <p class="fs-9 fw-500">
               <a
                 href="mailto:contact.moonbeachvilla@gmail.com"
@@ -76,7 +76,7 @@
         <div class="nav-right">
           <button style="margin: 17px 0" class="book-now">
             <a href="tel:+66614055575">
-              {{ t("bookNow") }}
+              {{ $t("bookNow") }}
             </a>
           </button>
           <LanguageSwitcher />
@@ -133,13 +133,13 @@
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">{{ t("callUs") }}</p>
+            <p class="fs-7 text-[#FFFFFF] fw-300">{{ $t("callUs") }}</p>
             <p class="fs-8 text-[#FFFFFF] fw-400 flex items-center">
-              <a href="tel:+442081583244" class="hover:text-blue-500">
-                +44 (0)20 8158 3244
+              <a href="tel:+66614055575" class="hover:text-blue-500">
+                (+66) 61 405 5575
               </a>
               <a
-                href="https://wa.me/66614055575"
+                href="https://api.whatsapp.com/message/XZMZJWGWK4FAO1"
                 target="_blank"
                 class="hover:text-green-500 ml-2"
               >
@@ -158,7 +158,7 @@
             class="pi pi-envelope text-[#EEE3C3] fs-12"
           ></i>
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">{{ t("emailUs") }}</p>
+            <p class="fs-7 text-[#FFFFFF] fw-300">{{ $t("emailUs") }}</p>
             <p class="fs-8 text-[#FFFFFF] fw-400">
               <a
                 href="mailto:contact.moonbeachvilla@gmail.com"
@@ -172,7 +172,7 @@
       <div class="px-12">
         <button style="margin: 2px 0 10px 0" class="book-now">
           <a href="tel:+66614055575">
-            {{ t("bookNow") }}
+            {{ $t("bookNow") }}
           </a>
         </button>
       </div>

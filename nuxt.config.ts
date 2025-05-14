@@ -7,7 +7,7 @@ import { dirname, resolve } from "path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
-  modules: ["@primevue/nuxt-module", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@primevue/nuxt-module"],
 
   primevue: {
     options: {
@@ -38,14 +38,13 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: "no_prefix",
-    lazy: true,
-    langDir: resolve(__dirname, "locales/"),
     locales: [
-      { code: "en", name: "English", file: "en.json", iso: "en-US" },
-      { code: "th", name: "ไทย", file: "th.json", iso: "th-TH" },
+      { code: "en", file: "en.json" },
+      { code: "th", file: "th.json" },
     ],
     defaultLocale: "en",
+    lazy: true,
+    langDir: "locales/",
   },
 
   css: [
