@@ -25,30 +25,30 @@
     <div class="container">
       <div class="max-w-7xl relative mx-auto text-center section-1">
         <h2 class="italic">
-          “THE PINNACLE OF LONDON LIVING. ELEVATES EVERY SINGLE OCCASION TO
-          SOMETHING TRULY MEMORABLE.”
+          “{{ $t("penthouse.tagline") }} {{ $t("penthouse.description") }}”
         </h2>
 
         <div class="max-w-5xl mx-auto">
           <div
             class="grid md:grid-cols-2 gap-8 text-gray-700 description leading-relaxed text-left"
           >
-            <p>
-              This exclusive residence embraces grand proportions rarely seen in
-              Central London. A one-of-a-kind penthouse crowns 37 Golden Square,
-              offering an uncompromising level of specification and remarkable
-              open spaces. Arranged over three floors and with two private
-              terraces, the penthouse is a most premium address within the
-              London market.
-            </p>
-            <p>
-              Private lift access within the residences offers guests added
-              privacy and security. The penthouse ground floor provides a
-              peaceful oasis with its master suite and two further en-suite
-              bedrooms. The first floor is a magical backdrop for social
-              interaction – perfect for grand celebrations. Watch London’s
-              dramatically changing sky from your own art gallery.
-            </p>
+            <div>
+              <p>
+                <b>{{ $t("brandConcept.moon.title") }}</b>
+                {{ $t("brandConcept.moon.description") }}
+              </p>
+
+              <p style="margin-top: 2rem">
+                <b>{{ $t("brandConcept.beach.title") }}</b>
+                {{ $t("brandConcept.beach.description") }}
+              </p>
+            </div>
+            <div>
+              <p>
+                <b>{{ $t("brandConcept.villa.title") }}</b>
+                {{ $t("brandConcept.villa.description") }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -61,11 +61,11 @@
         >
           <img
             :src="image.src"
-            :alt="image.alt"
+            :alt="$t(image.alt)"
             class="w-full h-80 object-cover shadow-lg"
           />
-          <p class="mt-12 fs-9 text-gray-600 hidden xl:!grid">
-            {{ image.caption }}
+          <p class="mt-12 fs-9 text-gray-600 ">
+            {{ $t(image.caption) }}
           </p>
         </div>
       </div>
@@ -76,17 +76,17 @@
         >
           <span class="relative top-10 text-[#c4a47c] text-9xl">“</span>
           <p class="vibe-private">
-            The vibe is hotel-meets-private members’ club.
+            {{ $t("penthouse.homeVibe") }}
           </p>
         </blockquote>
 
-        <div class="mt-6">
+        <!-- <div class="mt-6">
           <img
             src="@/assets/images/Standard-logo-scaled.webp"
             alt="The Standard"
             class="mx-auto the-standard"
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -102,18 +102,18 @@ import image3 from "@/assets/images/section-penthouse_3.jpg";
 const imageGrid = ref([
   {
     src: image1,
-    alt: "Penthouse Living Area",
-    caption: "Penthouse Living Area",
+    alt: "penthouse.living",
+    caption: "penthouse.living",
   },
   {
     src: image2,
-    alt: "Penthouse Outdoor Space",
-    caption: "Penthouse Outdoor Space",
+    alt: "penthouse.outdoor",
+    caption: "penthouse.outdoor",
   },
   {
     src: image3,
-    alt: "Penthouse Master Bedroom",
-    caption: "Penthouse Master Bedroom",
+    alt: "penthouse.bedroom",
+    caption: "penthouse.bedroom",
   },
 ]);
 </script>

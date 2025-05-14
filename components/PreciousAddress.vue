@@ -2,26 +2,16 @@
   <section class="relative w-full bg-white py-16 px-6 md:px-16">
     <div class="header">
       <div class="gold-line"></div>
-      <h2 class="title">A Precious Address</h2>
+      <h2 class="title">{{ $t("primeLocationTitle") }}</h2>
     </div>
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div>
         <div class="description">
           <p>
-            The neighbourhood inspires and attracts influential people, thanks
-            to its central location. Set at the junction
-            <strong
-              >where fine art, diplomatic quarters and new media meet, Golden
-              Square blends a heritage
-            </strong>
-            location with modern life!
+            {{ $t("primeLocation.p1") }}
           </p>
           <p class="mt-4">
-            <strong>Soho is known for its diverse entertainment</strong>, from
-            theatre to comedy and, of course, vibrant nightlife.
-            <strong>Mayfair’s reputation for haute couture</strong>, expert
-            tailoring and fine living continues for the pleasure of Golden
-            Square residents.
+            {{ $t("primeLocation.p2") }}
           </p>
         </div>
       </div>

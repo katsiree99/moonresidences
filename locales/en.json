@@ -39,5 +39,53 @@
         "living": "Spacious Living Area",
         "kitchen": "Modern Kitchen Suite",
         "extras": "Private Rooftop, Infinity Pool, Grill & Chill Zone, Exclusive Parking Space"
+    },
+    "brandConcept": {
+        "moon": {
+            "title": "Moon —",
+            "description": "A symbol of serenity, mystery, and romance. It reflects those quiet, magical nights where relaxation and inspiration flow beneath a glowing sky."
+        },
+        "beach": {
+            "title": "Beach —",
+            "description": "Where freedom, joy, and natural harmony unite. The soothing sound of waves and the soft sands welcome you to let go and simply be."
+        },
+        "villa": {
+            "title": "Villa —",
+            "description": "Not just a place to stay, but a private retreat that reflects your unique style. Designed for comfort, elegance, and intimacy—it’s your personal hideaway."
+        }
+    },
+    "penthouse": {
+        "tagline": "Moon Beach Villa – Place where the Moonlight meets the Sea",
+        "description": "At Moon Beach Villa, every detail is inspired by nature’s calm and beauty—crafted to awaken your senses and restore your spirit.",
+        "living": "Penthouse Living Area",
+        "outdoor": "Penthouse Outdoor Space",
+        "bedroom": "Penthouse Master Bedroom",
+        "homeVibe": "The vibe is home-meets-hideaway. A dreamlike escape that feels just like home, tucked away in nature’s embrace."
+    },
+    "partnersSectionTitle": "Moon Beach & Our Trusted Partners",
+    "partnersSectionDescription": "In partnership with top travel platforms like Airbnb, Agoda or booking via social media in any platforms. We make booking easy and your experience seamless from start to finish.",
+    "primeLocationTitle": "A Prime Location",
+    "primeLocation": {
+        "p1": "Perfectly placed just minutes from Patong Beach, Moon Beach Villa gives you instant access to peaceful shores and vibrant nightlife alike.",
+        "p2": "Explore iconic landmarks like the Big Buddha, Phuket Old Town, and Bangla Road—all just a short drive away. Whether you seek peace, adventure, or cultural discovery, everything is within reach."
+    },
+    "phuketHighlightsTitle": "Discover the Area",
+    "highlights": {
+        "bangla": {
+            "title": "Bangla Road",
+            "description": "Experience Phuket’s famous nightlife on Bangla Road—home to vibrant bars, live music, and nonstop energy just steps from Patong Beach."
+        },
+        "dining": {
+            "title": "Dining",
+            "description": "From fresh seafood to upscale dining, Patong offers a rich culinary scene. Savor beachfront restaurants or explore local street food gems."
+        },
+        "shopping": {
+            "title": "Shopping",
+            "description": "Discover local markets, boutique shops, and modern malls in Patong. Perfect for souvenirs, fashion, and artisanal finds."
+        },
+        "sightseeing": {
+            "title": "Sightseeing",
+            "description": "Explore landmarks like the Big Buddha, Wat Chalong, and Phuket Old Town—all within a short drive from Moon Beach Villa."
+        }
     }
 }

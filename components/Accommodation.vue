@@ -98,7 +98,10 @@
                 <button
                   class="border-1 border-white bg-[#53414c] text-white transition mt-5 btn-availability"
                 >
-                  CHECK AVAILABILITY
+                  <a href="tel:+66614055575">
+                    <i class="pi pi-phone text-lg"></i>
+                    CALL 061-405-5575
+                  </a>
                 </button>
               </div>
             </div>

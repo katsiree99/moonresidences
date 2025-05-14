@@ -43,12 +43,12 @@
               247/3 Kammala Kathu District Phuket 83150. Thailand
             </li>
             <li class="flex items-center text-[#54595f] c-pointer">
-              <a href="tel:+442081583244" class="hover:text-blue-500">
+              <a href="tel:+66614055575" class="hover:text-blue-500">
                 <span class="text-lg mr-10">📞</span>
-                +44 (0)20 8158 3244
+                (+66) 61 405 5575
               </a>
               <a
-                href="https://wa.me/442081583244"
+                href="https://wa.me/66614055575"
                 target="_blank"
                 class="hover:text-green-500 ml-2 flex items-center"
               >
@@ -62,41 +62,100 @@
             </li>
             <li class="flex items-center text-[#54595f] c-pointer">
               <a
-                href="mailto:stay@moonresidences.com"
+                href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
               >
                 <span class="text-lg mr-10">✉️</span>
-                stay@moonresidences.com
+                contact.moonbeachvilla@gmail.com
+              </a>
+            </li>
+
+            <li class="flex items-center text-[#54595f] c-pointer">
+              <a
+                href="https://line.me/R/ti/p/@mooonbeachvilla"
+                target="_blank"
+                class="flex hover:text-blue-500"
+              >
+                <span class="mr-6">
+                  <img
+                    src="@/assets/images/line-logo.png"
+                    style="width: 25px"
+                  />
+                </span>
+                @mooonbeachvilla
+              </a>
+            </li>
+
+            <li class="flex items-center text-[#54595f] c-pointer">
+              <a
+                href="https://www.facebook.com/MoonBeachVillaPatoong"
+                target="_blank"
+                class="hover:text-blue-500"
+              >
+                <i class="pi pi-facebook fs-13 mr-6"></i>
+                Moon Beach Villa Patoong
+              </a>
+            </li>
+
+            <li class="flex items-center text-[#54595f] c-pointer">
+              <a
+                href="https://www.instagram.com/mooonbeachvilla"
+                target="_blank"
+                class="hover:text-blue-500"
+              >
+                <i class="pi pi-instagram fs-13 mr-6"></i>
+                moonbeachvilla
               </a>
             </li>
           </ul>
         </div>
 
         <div class="flex justify-center space-x-6 text-[#53414c] mb-8 mt-20">
-          <div class="hover:text-[#C4A47C] transition">
-            <i class="pi pi-facebook fs-16"></i>
+          <div class="transition">
+            <a
+              href="https://line.me/R/ti/p/@mooonbeachvilla"
+              target="_blank"
+              rel="noopener"
+            >
+              <!-- <i class="pi pi-line fs-16"></i> -->
+              <img src="@/assets/images/line-logo.png" style="width: 30px" />
+            </a>
           </div>
-          <div class="hover:text-[#C4A47C] transition">
-            <i class="pi pi-instagram fs-16"></i>
+          <div class="transition">
+            <a
+              href="https://www.facebook.com/MoonBeachVillaPatoong"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="pi pi-facebook fs-16"></i>
+            </a>
           </div>
-          <div class="hover:text-[#C4A47C] transition">
-            <i class="pi pi-linkedin fs-16"></i>
+          <div class="transition">
+            <a
+              href="https://www.instagram.com/mooonbeachvilla"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="pi pi-instagram fs-16"></i>
+            </a>
+          </div>
+
+          <div class="transition">
+            <a href="tel:+66614055575" target="_blank" rel="noopener">
+              <i class="pi pi-whatsapp fs-16"></i>
+            </a>
           </div>
         </div>
 
         <div
           class="xl:flex justify-center space-x-6 text-sm mb-10 text-center font-roboto"
         >
-          <div class="text-[#53414c] hover:text-[#C4A47C] transition fs-10">
-            Terms & Conditions
-          </div>
-          <div class="text-[#53414c] hover:text-[#C4A47C] transition fs-10">
-            Cookie Policy
-          </div>
+          <div class="text-[#53414c] transition fs-10">Terms & Conditions</div>
+          <div class="text-[#53414c] transition fs-10">Cookie Policy</div>
         </div>
 
         <div class="font-roboto fs-10 text-gray-500 text-center mt-20">
-          © 2024
+          © 2025
         </div>
       </div>
     </div>

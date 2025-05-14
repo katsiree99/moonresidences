@@ -14,11 +14,11 @@
           <div class="text-left font-roboto">
             <p class="fs-9 fw-300">{{ t("callUs") }}</p>
             <p class="fs-9 fw-500 flex items-center">
-              <a href="tel:+442081583244" class="hover:text-blue-500">
-                +44 (0)20 8158 3244
+              <a href="tel:+66614055575" class="hover:text-blue-500">
+                (+66) 61 405 5575
               </a>
               <a
-                href="https://wa.me/442081583244"
+                href="https://wa.me/66614055575"
                 target="_blank"
                 class="hover:text-green-500 ml-2"
               >
@@ -46,9 +46,9 @@
             <p class="fs-9 fw-300">{{ t("emailUs") }}</p>
             <p class="fs-9 fw-500">
               <a
-                href="mailto:stay@moonresidences.com"
+                href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
-                >stay@moonresidences.com
+                >contact.moonbeachvilla@gmail.com
               </a>
             </p>
           </div>
@@ -74,9 +74,10 @@
           </li>
         </ul>
         <div class="nav-right">
-          <i class="pi pi-heart" style="font-size: 1.8rem"></i>
           <button style="margin: 17px 0" class="book-now">
-            {{ t("bookNow") }}
+            <a href="tel:+66614055575">
+              {{ t("bookNow") }}
+            </a>
           </button>
           <LanguageSwitcher />
         </div>
@@ -138,7 +139,7 @@
                 +44 (0)20 8158 3244
               </a>
               <a
-                href="https://wa.me/442081583244"
+                href="https://wa.me/66614055575"
                 target="_blank"
                 class="hover:text-green-500 ml-2"
               >
@@ -160,9 +161,9 @@
             <p class="fs-7 text-[#FFFFFF] fw-300">{{ t("emailUs") }}</p>
             <p class="fs-8 text-[#FFFFFF] fw-400">
               <a
-                href="mailto:stay@moonresidences.com"
+                href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
-                >stay@moonresidences.com
+                >contact.moonbeachvilla@gmail.com
               </a>
             </p>
           </div>
@@ -170,7 +171,9 @@
       </div>
       <div class="px-12">
         <button style="margin: 2px 0 10px 0" class="book-now">
-          {{ t("bookNow") }}
+          <a href="tel:+66614055575">
+            {{ t("bookNow") }}
+          </a>
         </button>
       </div>
     </div>

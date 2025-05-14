@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 import icon1 from "@/assets/images/Untitled-1-01-1024x1024.webp";
-import icon2 from "@/assets/images/Untitled-1-02-1024x1024.webp";
-import icon3 from "@/assets/images/icon-1.webp";
-import icon4 from "@/assets/images/Untitled-2.webp";
+import icon2 from "@/assets/images/location.png";
+import icon3 from "@/assets/images/clean.png";
+import icon4 from "@/assets/images/lobby.png";
 
 const services = ref([
   {

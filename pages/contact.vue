@@ -17,9 +17,9 @@
   </section>
 
   <section class="bg-white py-16 px-6 md:px-16">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+    <div class="max-w-7xl mx-auto">
       <div
-        class="text-[#53414c] flex flex-col items-start justify-center address"
+        class="text-[#53414c] flex flex-col items-center justify-center address"
       >
         <ul class="mt-4">
           <li
@@ -30,12 +30,12 @@
             247/3 Kammala Kathu District Phuket 83150. Thailand
           </li>
           <li class="flex items-center text-[#54595f] c-pointer">
-            <a href="tel:+442081583244" class="hover:text-blue-500">
+            <a href="tel:+66614055575" class="hover:text-blue-500">
               <span class="text-lg mr-10">📞</span>
-              +44 (0)20 8158 3244
+              (+66) 61 405 5575
             </a>
             <a
-              href="https://wa.me/442081583244"
+              href="https://wa.me/66614055575"
               target="_blank"
               class="hover:text-green-500 ml-10"
             >
@@ -44,27 +44,63 @@
           </li>
           <li class="flex items-center text-[#54595f] c-pointer">
             <a
-              href="mailto:stay@moonresidences.com"
+              href="mailto:contact.moonbeachvilla@gmail.com"
               class="hover:text-blue-500"
             >
               <span class="text-lg mr-10">✉️</span>
-              stay@moonresidences.com
+              contact.moonbeachvilla@gmail.com
+            </a>
+          </li>
+
+          <li class="flex items-center text-[#54595f] c-pointer">
+            <a
+              href="https://line.me/R/ti/p/@mooonbeachvilla"
+              target="_blank"
+              class="flex hover:text-blue-500"
+            >
+              <span class="text-lg mr-6">
+                <img src="@/assets/images/line-logo.png" style="width: 25px" />
+              </span>
+              @mooonbeachvilla
+            </a>
+          </li>
+
+          <li class="flex items-center text-[#54595f] c-pointer">
+            <a
+              href="https://www.facebook.com/MoonBeachVillaPatoong"
+              target="_blank"
+              class="hover:text-blue-500"
+            >
+              <i class="pi pi-facebook fs-13 mr-6"></i>
+              Moon Beach Villa Patoong
+            </a>
+          </li>
+
+          <li class="flex items-center text-[#54595f] c-pointer">
+            <a
+              href="https://www.instagram.com/mooonbeachvilla"
+              target="_blank"
+              class="hover:text-blue-500"
+            >
+              <i class="pi pi-instagram fs-13 mr-6"></i>
+              moonbeachvilla
             </a>
           </li>
         </ul>
       </div>
-
+      <!-- 
       <div>
+     
         <div class="text-center">
-          <h2 class="title text-[#52414B]">Send Us a Message</h2>
+          <h2 class="title text-[#52414B]">{{ $t("primeLocationTitle") }}</h2>
           <div class="gold-line"></div>
         </div>
+       
 
         <form
           @submit.prevent="submitForm"
           class="grid gap-4 md:grid-cols-2 mt-10"
         >
-          <!-- First Name -->
           <div class="flex flex-col gap-1">
             <label class="text-sm font-medium text-gray-700">First Name</label>
             <InputText
@@ -81,7 +117,6 @@
             >
           </div>
 
-          <!-- Email -->
           <div class="flex flex-col gap-1">
             <label class="text-sm font-medium text-gray-700"
               >Email <span class="text-red-500">*</span></label
@@ -100,7 +135,6 @@
             >
           </div>
 
-          <!-- Phone Number -->
           <div class="flex flex-col gap-1 md:col-span-2">
             <label class="text-sm font-medium text-gray-700"
               >Phone Number</label
@@ -112,7 +146,6 @@
             />
           </div>
 
-          <!-- Check-in Date -->
           <div class="flex flex-col gap-1">
             <label class="text-sm font-medium text-gray-700"
               >Check-in Date</label
@@ -132,7 +165,6 @@
             />
           </div>
 
-          <!-- Check-out Date -->
           <div class="flex flex-col gap-1">
             <label class="text-sm font-medium text-gray-700"
               >Check-out Date</label
@@ -152,7 +184,6 @@
             />
           </div>
 
-          <!-- Message -->
           <div class="flex flex-col gap-1 md:col-span-2">
             <label class="text-sm font-medium text-gray-700">Message</label>
             <Textarea
@@ -163,12 +194,11 @@
             />
           </div>
 
-          <!-- Submit Button -->
           <div class="md:col-span-2">
             <Button label="Submit" class="p-button-lg custom-button" />
           </div>
-        </form>
-      </div>
+        </form> 
+      </div>-->
     </div>
   </section>
 
@@ -326,6 +356,7 @@ const submitForm = () => {
 
 .address {
   max-width: 400px;
+  margin: 0 auto;
   @media (max-width: 768px) {
     padding: 0rem 0;
   }

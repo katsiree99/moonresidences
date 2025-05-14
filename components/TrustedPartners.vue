@@ -5,7 +5,7 @@
     <div class="max-w-5xl mx-auto">
       <div class="mb-6">
         <div class="gold-line"></div>
-        <h2 class="title">Our Trusted Partners</h2>
+        <h2 class="title">{{ $t("partnersSectionTitle") }}</h2>
       </div>
 
       <div class="mx-auto relative text-center description">
@@ -14,9 +14,7 @@
           alt="quote"
           class="mx-auto quote"
         />
-        37 Golden Square was a wonderful place to stay. Spacious, clean, and
-        secure. Perfect location within walking distance of shopping,
-        restaurants, and Underground to easily explore the city.
+        {{ $t("partnersSectionDescription") }}
       </div>
 
       <div class="grid md:grid-cols-3 gap-6 mt-12 partners-section">
@@ -59,39 +57,30 @@
 <script setup>
 import { ref } from "vue";
 
-import logo1 from "@/assets/images/Airbnb-logo.webp";
-import logo1_1 from "@/assets/images/luxe-1.webp";
-import logo1_2 from "@/assets/images/Superhost-logo-CMYK-Transparent.webp";
-import logo2 from "@/assets/images/Booking.Com-logo-e1669220301807.webp";
-import logo3 from "@/assets/images/image-10-e1669220346234.webp";
+import logo1 from "@/assets/images/Agoda_logo.png";
+// import logo1_1 from "@/assets/images/luxe-1.webp";
+// import logo1_2 from "@/assets/images/Superhost-logo-CMYK-Transparent.webp";
+import logo2 from "@/assets/images/Airbnb-logo.png";
+import logo3 from "@/assets/images/trip_logo.png";
 
 const partners = ref([
   {
-    name: "Airbnb",
+    name: "Agoda.com",
     logo: logo1,
-    title: "Superhost",
-    subLogos: [
-      {
-        name: "Luxe",
-        logo: logo1_1,
-      },
-      {
-        name: "Superhost",
-        logo: logo1_2,
-      },
-    ],
+    title: "Rated",
+    rating: "9.5 / 10",
   },
   {
-    name: "Booking.com",
+    name: "Airbnb.com",
     logo: logo2,
     title: "Rated",
-    rating: "9.1 / 10",
+    rating: "9.5 / 10",
   },
   {
-    name: "Expedia",
+    name: "Trip.com",
     logo: logo3,
     title: "Rated",
-    rating: "4 / 5",
+    rating: "9.5 / 10",
   },
 ]);
 </script>
@@ -166,14 +155,6 @@ const partners = ref([
   margin-bottom: 1rem;
   @media (max-width: 768px) {
     width: 190px;
-  }
-}
-
-.partner-logo.p_0 {
-  width: 180px;
-
-  @media (max-width: 768px) {
-    width: 100px;
   }
 }
 </style>

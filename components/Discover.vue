@@ -4,7 +4,7 @@
       <div class="mx-auto text-center">
         <div class="header">
           <div class="gold-line"></div>
-          <h2 class="title">Discover the Area</h2>
+          <h2 class="title">{{ $t("phuketHighlightsTitle") }}</h2>
         </div>
 
         <div class="grid md:grid-cols-4 gap-0 mt-12">
@@ -41,7 +41,7 @@
               }"
             >
               <p class="area_description leading-relaxed max-w-xs">
-                {{ area.description }}
+                {{ $t(area.description) }}
               </p>
 
               <button
@@ -49,7 +49,7 @@
                 class="mt-6 border-1 border-white hover:bg-white hover:text-black transition buttonText"
                 @click.stop="handleClick(area.link)"
               >
-                {{ area.buttonText }}
+                {{ $t(area.buttonText) }}
               </button>
             </div>
 
@@ -63,7 +63,7 @@
               }"
             >
               <p class="title-name transition-all duration-500">
-                {{ area.title }}
+                {{ $t(area.title) }}
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@
 import { ref } from "vue";
 
 // นำเข้าภาพ
-import image1 from "@/assets/images/bebe-bob-restaurant-bar.webp";
+import image1 from "@/assets/images/V1495116988120200731061847.jpg";
 import image2 from "@/assets/images/37GS-chef-5_-6699-1-scaled.webp";
 import image3 from "@/assets/images/Rectangle-49.webp";
 import image4 from "@/assets/images/Rectangle-50.webp";
@@ -85,28 +85,23 @@ import image4 from "@/assets/images/Rectangle-50.webp";
 const discoverAreas = ref([
   {
     image: image1,
-    description:
-      "If you love rotisserie chicken, caviar, fine wine and champagne, the glamorous Bébé Bob is at our doorstep.",
-    buttonText: "View Menu",
-    link: "https://bobbobricard.com/bebe-bob/",
+    title: "highlights.bangla.title",
+    description: "highlights.bangla.description",
   },
   {
     image: image2,
-    title: "Dining",
-    description:
-      "Immerse yourself in England's capital by exploring our rich history and exciting tourist attractions including Buckingham Palace, Hyde Park and the London Eye.",
+    title: "highlights.dining.title",
+    description: "highlights.dining.description",
   },
   {
     image: image3,
-    title: "Shopping",
-    description:
-      "Immerse yourself in England's capital by exploring our rich history and exciting tourist attractions including Buckingham Palace, Hyde Park and the London Eye.",
+    title: "highlights.shopping.title",
+    description: "highlights.shopping.description",
   },
   {
     image: image4,
-    title: "Sightseeing",
-    description:
-      "Immerse yourself in England's capital by exploring our rich history and exciting tourist attractions including Buckingham Palace, Hyde Park and the London Eye.",
+    title: "highlights.sightseeing.title",
+    description: "highlights.sightseeing.description",
   },
 ]);
 
