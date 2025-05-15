@@ -248,7 +248,7 @@ useHead({
     },
     {
       name: "keywords",
-      content: "moonresidences,Hotel",
+      content: "Moon Beach, Villa Patong",
     },
   ],
 });

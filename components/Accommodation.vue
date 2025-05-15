@@ -125,7 +125,7 @@
 import { ref, onMounted, nextTick } from "vue";
 import Carousel from "primevue/carousel";
 
-import image1 from "@/assets/images/1-Golden-3885-scaled.jpg";
+import image1 from "/images/gallery/villa_patong/KALIMVILLA-149.jpg";
 // import image2 from "@/assets/images/2-Golden-3885-scaled.jpg";
 
 const apartments = ref([

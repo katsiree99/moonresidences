@@ -26,9 +26,9 @@ export default defineNuxtConfig({
         class: "app",
       },
       charset: "utf-8",
-      titleTemplate: "%s | moonresidences",
+      titleTemplate: "%s | moonbeachvilla",
       meta: [
-        { name: "author", content: "moonresidences" },
+        { name: "author", content: "moonbeachvilla" },
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1, maximum-scale=5",
