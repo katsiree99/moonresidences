@@ -13,7 +13,7 @@
       <div
         class="relative text-center text-white z-10 flex flex-col items-center justify-center h-full"
       >
-        <h1 class="title">The Penthouse</h1>
+        <h1 class="title">The Moon Beach</h1>
 
         <NuxtLink
           to="/gallery"
@@ -62,13 +62,22 @@
           <img
             :src="image.src"
             :alt="$t(image.alt)"
-            class="w-full h-80 object-cover shadow-lg"
+            class="w-full h-80 object-cover shadow-lg cursor-pointer"
+            @click="openLightbox(index)"
           />
-          <p class="mt-12 fs-9 text-gray-600 ">
+
+          <p class="mt-12 fs-9 text-gray-600">
             {{ $t(image.caption) }}
           </p>
         </div>
       </div>
+
+      <vue-easy-lightbox
+        :visible="visible"
+        :imgs="lightboxImages"
+        :index="lightboxIndex"
+        @hide="visible = false"
+      />
 
       <div class="mx-auto mt-10 text-center">
         <blockquote
@@ -92,8 +101,9 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
+import VueEasyLightbox from "vue-easy-lightbox";
 
 import image1 from "@/assets/images/section-penthouse_1.jpg";
 import image2 from "@/assets/images/section-penthouse_2.jpg";
@@ -116,6 +126,16 @@ const imageGrid = ref([
     caption: "penthouse.bedroom",
   },
 ]);
+
+const visible = ref(false);
+const lightboxIndex = ref(0);
+
+const lightboxImages = computed(() => imageGrid.value.map((img) => img.src));
+
+const openLightbox = (index: number) => {
+  lightboxIndex.value = index;
+  visible.value = true;
+};
 </script>
 
 <style lang="scss" scoped>

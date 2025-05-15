@@ -34,9 +34,9 @@
 
         <div class="text-center">
           <img
-            src="@/assets/images/LOGOMoonbeachvillaBlack.svg"
+            src="@/assets/images/LOGOMoonbeachvillacolor.svg"
             alt="37GS Logo"
-            class="mx-auto img-white"
+            class="mx-auto"
             style="width: 37%"
           />
         </div>
@@ -95,10 +95,10 @@
         >
           <div class="logo">
             <img
-              src="@/assets/images/LOGOMoonbeachvillaBlack.svg"
+              src="@/assets/images/LOGOMoonbeachvillacolor.svg"
               alt="37GS Logo"
               style="width: 60%"
-              class="img-white"
+              class=""
             />
           </div>
           <div class="icons text-end px-10">
@@ -191,6 +191,9 @@ import { useI18n } from "vue-i18n";
 
 const { t, locale } = useI18n();
 
+import { useLocalePath } from "#imports";
+const localePath = useLocalePath();
+
 const menuItems = computed(() => {
   const get = (key: string) => {
     const val = t(key);
@@ -200,9 +203,9 @@ const menuItems = computed(() => {
   };
 
   return [
-    { label: get("home"), path: "/" },
-    { label: get("gallery"), path: "/gallery" },
-    { label: get("contact"), path: "/contact" },
+    { label: get("home"), path: localePath("/") },
+    { label: get("gallery"), path: localePath("/gallery") },
+    { label: get("contact"), path: localePath("/contact") },
   ];
 });
 
@@ -348,7 +351,7 @@ a.active {
   border-top: 3px solid #eee3c3;
 }
 
-.img-white {
+. {
   filter: invert(100%) brightness(1000%);
 }
 </style>

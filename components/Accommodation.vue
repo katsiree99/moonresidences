@@ -12,7 +12,7 @@
     </div>
 
     <div
-      class="grid sm:grid-cols-1 md:grid-cols-1 gap-x-12 mt-10 max-w-4xl mx-auto hidden xl:!grid"
+      class="grid sm:grid-cols-1 md:grid-cols-1 gap-x-12 mt-10 max-w-4xl mx-auto"
     >
       <div>
         <p class="fs-10 fw-100">
@@ -33,7 +33,7 @@
 
   <section class="relative bg-dark-pattern">
     <div
-      class="relative mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-x-6 -mt-32 lg:-mt-40"
+      class="relative mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-x-6 -mt-15 lg:-mt-40"
     >
       <div class="relative z-10 mb-10">
         <img
@@ -112,10 +112,10 @@
 
     <div class="text-center mt-10">
       <NuxtLink
-        to="/gallery"
+        to="/layouts"
         class="inline-block border border-white px-16 py-10 bg-[#53414c] text-white transition text-lg fw-400 text-center"
       >
-        VIEW ALL VILLA
+        VIEW ALL LAYOUTS
       </NuxtLink>
     </div>
   </section>

@@ -82,7 +82,7 @@
                     style="width: 25px"
                   />
                 </span>
-                @mooonbeachvilla
+                @moonbeachvilla
               </a>
             </li>
 
@@ -93,7 +93,7 @@
                 class="hover:text-blue-500"
               >
                 <i class="pi pi-facebook fs-13 mr-6"></i>
-                Moon Beach Villa Patoong
+                Moon Beach Villa Patong
               </a>
             </li>
 

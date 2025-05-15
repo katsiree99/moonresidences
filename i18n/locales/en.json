@@ -10,7 +10,7 @@
     "heroDescription": "Discover the ultimate escape at Moon Beach Villa, a modern 3-story private sanctuary just moments from the white sands and crystal-clear waters of Patong Beach. Embrace the freedom of beachfront living with panoramic sea views that soothe the soul, morning to night.",
     "features": {
         "comfort": {
-            "title": "Stylish Living, Effortless Comfort"
+            "title": "Lifestyle Meets Ease"
         },
         "connectivity": {
             "title": "Seamless Connectivity for Work & Leisure",
@@ -33,7 +33,7 @@
     "relaxSubtitle": "Unwind in a spacious, 3-level villa crowned with a rooftop haven. Every corner has been  meticulously crafted to elevate your stay—whether you're gathering with friends, enjoying family time, or savoring a romantic retreat.",
     "relaxDescription": "From panoramic sea views and open living spaces to a fully equipped kitchen, BBQ corner, outdoor dining area, and a private infinity edge pool with coral beach vibe—every detail invites you to slow down, breathe in, and truly feel at home.",
     "villaFeatures": {
-        "title": "3-Bedroom Pool Villa",
+        "title": "Villa Layouts",
         "suite": "Private Suite: 3 Bedrooms",
         "bathroom": "Bathroom: 3 rooms",
         "living": "Spacious Living Area",
@@ -57,13 +57,13 @@
     "penthouse": {
         "tagline": "Moon Beach Villa – Place where the Moonlight meets the Sea",
         "description": "At Moon Beach Villa, every detail is inspired by nature’s calm and beauty—crafted to awaken your senses and restore your spirit.",
-        "living": "Penthouse Living Area",
-        "outdoor": "Penthouse Outdoor Space",
-        "bedroom": "Penthouse Master Bedroom",
+        "living": "Moon Beach Living Area",
+        "outdoor": "Moon Beach – Outdoor Space",
+        "bedroom": "Moon Beach – Master Bedroom",
         "homeVibe": "The vibe is home-meets-hideaway. A dreamlike escape that feels just like home, tucked away in nature’s embrace."
     },
     "partnersSectionTitle": "Moon Beach & Our Trusted Partners",
-    "partnersSectionDescription": "In partnership with top travel platforms like Airbnb, Agoda or booking via social media in any platforms. We make booking easy and your experience seamless from start to finish.",
+    "partnersSectionDescription": "In partnership with top travel platforms like Airbnb, Agoda and Trip.com or booking via social media in any platforms. We make booking easy and your experience seamless from start to finish.",
     "primeLocationTitle": "A Prime Location",
     "primeLocation": {
         "p1": "Perfectly placed just minutes from Patong Beach, Moon Beach Villa gives you instant access to peaceful shores and vibrant nightlife alike.",
