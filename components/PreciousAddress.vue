@@ -43,7 +43,7 @@
   font-size: 50px;
   font-weight: 400;
   word-break: break-word;
-  color: #52414b;
+  color: #5C5C5C;
 
   @media (max-width: 768px) {
     font-size: 33px;
@@ -54,7 +54,7 @@
 .gold-line {
   width: 15%;
   height: 2px;
-  background: #b59771;
+  background: #a7d8de;
   margin: 1rem auto 2rem;
   @media (max-width: 768px) {
     width: 120px;

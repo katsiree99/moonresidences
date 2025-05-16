@@ -12,7 +12,7 @@
 
     <div class="absolute bottom-10 left-0 right-0 text-center z-10">
       <h2 class="title">Gallery</h2>
-      <div class="w-20 h-[1.5px] bg-[#B59771] mt-2 mx-auto"></div>
+      <div class="w-20 h-[1.5px] bg-[#a7d8de] mt-2 mx-auto"></div>
     </div>
   </section>
 
@@ -201,7 +201,7 @@ export default {
 .gold-line {
   width: 15%;
   height: 2px;
-  background: #b59771;
+  background: #a7d8de;
   margin: 1rem auto 2rem;
   @media (max-width: 768px) {
     width: 120px;

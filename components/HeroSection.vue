@@ -53,6 +53,10 @@ const heroSubtitle = computed(() => t("heroSubtitle"));
   justify-content: center;
   color: white;
   overflow: hidden;
+
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #ffffff1c;
 }
 
 .background-image {
@@ -95,7 +99,7 @@ const heroSubtitle = computed(() => t("heroSubtitle"));
 }
 
 .hero-content h1 {
-  color: #fdfdfd;
+  color: #fff;
   font-family: "Bodoni Moda", serif;
   font-size: 90px;
   font-weight: 400;
@@ -106,7 +110,7 @@ const heroSubtitle = computed(() => t("heroSubtitle"));
 }
 
 .hero-content p {
-  color: #ffffff;
+  color: #fff;
   font-size: 28px;
   font-weight: 300;
   letter-spacing: 3.2px;

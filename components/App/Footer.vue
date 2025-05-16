@@ -31,20 +31,20 @@
     <div class="max-w-6xl mx-auto relative px-6 md:px-16">
       <div class="container">
         <div class="mb-8 text-left md:text-center">
-          <h3 class="text-xl font-serif font-semibold text-[#7a7a7a]">
+          <h3 class="text-xl font-serif font-semibold text-[#5C5C5C]">
             CONTACTS
           </h3>
           <ul class="mt-4">
             <li
-              class="flex items-center text-[#54595f] c-pointer"
+              class="flex items-center text-[#5C5C5C] c-pointer"
               onclick="window.open('https://maps.app.goo.gl/phQWt93kvV48JfJK9', '_blank')"
             >
-              <span class="text-lg mr-10">🏢</span>
+              <i class="pi pi-home fs-13 mr-6 text-[#a7d8de]"></i>
               247/3 Kammala Kathu District Phuket 83150. Thailand
             </li>
-            <li class="flex items-center text-[#54595f] c-pointer">
+            <li class="flex items-center text-[#5C5C5C] c-pointer">
               <a href="tel:+66614055575" class="hover:text-blue-500">
-                <span class="text-lg mr-10">📞</span>
+                <i class="pi pi-phone fs-13 mr-6 text-[#a7d8de]"></i>
                 (+66) 61 405 5575
               </a>
               <a
@@ -60,17 +60,17 @@
                 Chat on WhatsApp
               </a>
             </li>
-            <li class="flex items-center text-[#54595f] c-pointer">
+            <li class="flex items-center text-[#5C5C5C] c-pointer">
               <a
                 href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
               >
-                <span class="text-lg mr-10">✉️</span>
+                <i class="pi pi-envelope fs-13 mr-6 text-[#a7d8de]"></i>
                 contact.moonbeachvilla@gmail.com
               </a>
             </li>
 
-            <li class="flex items-center text-[#54595f] c-pointer">
+            <li class="flex items-center text-[#5C5C5C] c-pointer">
               <a
                 href="https://line.me/R/ti/p/@613cxrry"
                 target="_blank"
@@ -86,24 +86,24 @@
               </a>
             </li>
 
-            <li class="flex items-center text-[#54595f] c-pointer">
+            <li class="flex items-center text-[#5C5C5C] c-pointer">
               <a
                 href="https://www.facebook.com/people/Moon-Beach-Villa-Patong/61574416492308/"
                 target="_blank"
                 class="hover:text-blue-500"
               >
-                <i class="pi pi-facebook fs-13 mr-6"></i>
+                <i class="pi pi-facebook fs-13 mr-6 text-[#a7d8de]"></i>
                 Moon Beach Villa Patong
               </a>
             </li>
 
-            <li class="flex items-center text-[#54595f] c-pointer">
+            <li class="flex items-center text-[#5C5C5C] c-pointer">
               <a
                 href="https://www.instagram.com/moonbeachvilla/"
                 target="_blank"
                 class="hover:text-blue-500"
               >
-                <i class="pi pi-instagram fs-13 mr-6"></i>
+                <i class="pi pi-instagram fs-13 mr-6 text-[#a7d8de]"></i>
                 moonbeachvilla
               </a>
             </li>
@@ -127,7 +127,7 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="pi pi-facebook fs-16"></i>
+              <i class="pi pi-facebook fs-16 text-[#a7d8de]"></i>
             </a>
           </div>
           <div class="transition">
@@ -136,13 +136,13 @@
               target="_blank"
               rel="noopener"
             >
-              <i class="pi pi-instagram fs-16"></i>
+              <i class="pi pi-instagram fs-16 text-[#a7d8de]"></i>
             </a>
           </div>
 
           <div class="transition">
             <a href="tel:+66614055575" target="_blank" rel="noopener">
-              <i class="pi pi-whatsapp fs-16"></i>
+              <i class="pi pi-whatsapp fs-16 text-[#a7d8de]"></i>
             </a>
           </div>
         </div>
@@ -150,8 +150,8 @@
         <div
           class="xl:flex justify-center space-x-6 text-sm mb-10 text-center font-roboto"
         >
-          <div class="text-[#53414c] transition fs-10">Terms & Conditions</div>
-          <div class="text-[#53414c] transition fs-10">Cookie Policy</div>
+          <div class="text-[#5C5C5C] transition fs-10">Terms & Conditions</div>
+          <div class="text-[#5C5C5C] transition fs-10">Cookie Policy</div>
         </div>
 
         <div class="font-roboto fs-10 text-gray-500 text-center mt-20">

@@ -8,12 +8,12 @@
         <div class="flex items-center gap-5">
           <img
             style="width: 41px"
-            src="@/assets/images/Phone-icon-01.svg"
+            src="@/assets/images/Phone-icon-01.png"
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-9 fw-300">{{ $t("callUs") }}</p>
-            <p class="fs-9 fw-500 flex items-center">
+            <p class="fs-9 fw-300 text-[#5C5C5C]">{{ $t("callUs") }}</p>
+            <p class="fs-9 fw-500 flex items-center text-[#5C5C5C]">
               <a href="tel:+66614055575" class="hover:text-blue-500">
                 (+66) 61 405 5575
               </a>
@@ -43,8 +43,8 @@
 
         <div class="flex items-center gap-5">
           <div class="text-right font-roboto">
-            <p class="fs-9 fw-300">{{ $t("emailUs") }}</p>
-            <p class="fs-9 fw-500">
+            <p class="fs-9 fw-300 text-[#5C5C5C]">{{ $t("emailUs") }}</p>
+            <p class="fs-9 fw-500 text-[#5C5C5C]">
               <a
                 href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
@@ -52,7 +52,7 @@
               </a>
             </p>
           </div>
-          <i style="font-size: 40px" class="pi pi-envelope text-[#EEE3C3]"></i>
+          <i style="font-size: 40px" class="pi pi-envelope text-[#a7d8de]"></i>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <ul class="nav-links">
           <li v-for="item in menuItems" :key="item.path">
             <NuxtLink
-              class="text-[#EEE3C3] fw-500 mr-10"
+              class="text-[#5C5C5C] fw-500 mr-10"
               style="padding: 10px 0"
               :to="item.path"
               active-class="active"
@@ -86,7 +86,7 @@
 
     <div class="mobile-header" v-if="isMobile">
       <div
-        style="border-bottom: 1px solid #eee3c3"
+        style="border-bottom: 1px solid #a7d8de"
         class="top-section mb-6 px-5"
         :class="{ 'fixed-mobile': isScrolled }"
       >
@@ -103,7 +103,7 @@
           </div>
           <div class="icons text-end px-10">
             <i
-              class="pi pi-bars text-[#EEE3C3]"
+              class="pi pi-bars text-[#a7d8de]"
               style="cursor: pointer; font-size: 1.8rem"
               @click="toggleMenu"
             ></i>
@@ -113,7 +113,7 @@
         <div v-if="mobileMenu" class="mobile-menu">
           <ul>
             <li
-              class="my-3 text-start text-[#EEE3C3] text-xs mb-10"
+              class="my-3 text-start text-[#5C5C5C] font-bold text-xs mb-10"
               v-for="item in menuItems"
               :key="item.path"
             >
@@ -129,12 +129,12 @@
         <div class="flex items-center gap-5">
           <img
             style="width: 28px"
-            src="@/assets/images/Phone-icon-01.svg"
+            src="@/assets/images/Phone-icon-01.png"
             alt=""
           />
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">{{ $t("callUs") }}</p>
-            <p class="fs-8 text-[#FFFFFF] fw-400 flex items-center">
+            <p class="fs-7 text-[#5C5C5C] fw-300">{{ $t("callUs") }}</p>
+            <p class="fs-8 text-[#5C5C5C] fw-400 flex items-center">
               <a href="tel:+66614055575" class="hover:text-blue-500">
                 (+66) 61 405 5575
               </a>
@@ -155,11 +155,11 @@
         <div class="flex items-center gap-5">
           <i
             style="width: 28px"
-            class="pi pi-envelope text-[#EEE3C3] fs-12"
+            class="pi pi-envelope text-[#a7d8de] fs-12"
           ></i>
           <div class="text-left font-roboto">
-            <p class="fs-7 text-[#FFFFFF] fw-300">{{ $t("emailUs") }}</p>
-            <p class="fs-8 text-[#FFFFFF] fw-400">
+            <p class="fs-7 text-[#5C5C5C] fw-300">{{ $t("emailUs") }}</p>
+            <p class="fs-8 text-[#5C5C5C] fw-400">
               <a
                 href="mailto:contact.moonbeachvilla@gmail.com"
                 class="hover:text-blue-500"
@@ -238,7 +238,7 @@ onUnmounted(() => {
 
 .header {
   color: white;
-  background: #53414c;
+  background: #f6f1e7;
   text-align: center;
   transition: all 0.3s;
   position: relative;
@@ -257,11 +257,11 @@ onUnmounted(() => {
   flex-direction: column;
   /* align-items: center; */
   gap: 10px;
-  color: #eee3c3;
+  color: #c4a47c;
 }
 
 .nav-bar {
-  border-top: 1px solid #eee3c3;
+  border-top: 2px solid #a7d8de;
 }
 
 .container {
@@ -280,7 +280,7 @@ onUnmounted(() => {
   top: 0;
   left: 0;
   width: 100%;
-  background: #53414c;
+  background: #f6f1e7;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -299,8 +299,8 @@ onUnmounted(() => {
 }
 
 .book-now {
-  background: #eee3c3;
-  color: #52414b;
+  background: #c4a47c;
+  color: #fff;
   font-weight: 400;
   width: 100%;
   padding: 8px 24px;
@@ -316,7 +316,7 @@ onUnmounted(() => {
 }
 
 .mobile-menu {
-  background: #53414c;
+  background: #f6f1e7;
   padding: 20px;
   position: absolute;
   top: 90px;
@@ -341,17 +341,17 @@ onUnmounted(() => {
   top: 0;
   left: 0;
   width: 100%;
-  background: #53414c;
+  background: #f6f1e7;
   z-index: 9999;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 a.active {
-  border-top: 3px solid #eee3c3;
+  border-top: 3px solid #a7d8de;
 }
 
-. {
+.img-white {
   filter: invert(100%) brightness(1000%);
 }
 </style>

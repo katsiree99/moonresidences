@@ -71,7 +71,7 @@ const features = ref([
 }
 
 .feature-title {
-  color: #b59771;
+  color: #c4a47c;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.4em;

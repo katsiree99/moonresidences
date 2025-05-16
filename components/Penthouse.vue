@@ -83,7 +83,7 @@
         <blockquote
           class="text-lg max-w-3xl mx-auto relative text-gray-300 leading-relaxed"
         >
-          <span class="relative top-10 text-[#c4a47c] text-9xl">“</span>
+          <span class="relative top-10 text-[#a7d8de] text-9xl">“</span>
           <p class="vibe-private">
             {{ $t("penthouse.homeVibe") }}
           </p>
@@ -141,7 +141,7 @@ const openLightbox = (index: number) => {
 <style lang="scss" scoped>
 h2 {
   text-align: center;
-  color: #404040;
+  color: #5C5C5C;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.5em;
@@ -179,7 +179,7 @@ h2 {
 }
 
 p.vibe-private {
-  color: #52414b;
+  color: #5C5C5C;
   font-family: "Bodoni Moda", serif;
   font-size: 30px;
   font-weight: 400;

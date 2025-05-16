@@ -97,7 +97,7 @@ const partners = ref([
 .gold-line {
   width: 15%;
   height: 2px;
-  background: #b59771;
+  background: #a7d8de;
   margin: 1rem auto 2rem;
   @media (max-width: 768px) {
     width: 120px;

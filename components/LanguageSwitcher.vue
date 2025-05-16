@@ -34,13 +34,13 @@ const toggleLang = async () => {
   <div class="flex items-center gap-2">
     <span
       class="text-sm font-bold transition-colors"
-      :class="currentLang === 'en' ? 'text-[#EEE3C3]' : 'text-gray-400'"
+      :class="currentLang === 'en' ? 'text-[#c4a47c]' : 'text-gray-400'"
     >
       EN
     </span>
 
     <div
-      class="relative w-[66px] h-[34px] rounded-full border border-[#ddd] shadow-md cursor-pointer transition-all duration-300 bg-[#53414c]"
+      class="relative w-[66px] h-[34px] rounded-full border border-[#ddd] shadow-md cursor-pointer transition-all duration-300 bg-[#f6f1e7]"
       @click="toggleLang"
     >
       <div
@@ -57,7 +57,7 @@ const toggleLang = async () => {
 
     <span
       class="text-sm font-bold transition-colors"
-      :class="currentLang === 'th' ? 'text-[#EEE3C3]' : 'text-gray-400'"
+      :class="currentLang === 'th' ? 'text-[#c4a47c]' : 'text-gray-400'"
     >
       TH
     </span>

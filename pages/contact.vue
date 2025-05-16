@@ -12,77 +12,82 @@
 
     <div class="absolute bottom-10 left-0 right-0 text-center z-10">
       <h2 class="title">Contact Us</h2>
-      <div class="w-20 h-[1.5px] bg-[#B59771] mt-2 mx-auto"></div>
+      <div class="w-20 h-[1.5px] bg-[#a7d8de] mt-2 mx-auto"></div>
     </div>
   </section>
 
   <section class="bg-white py-16 px-6 md:px-16">
     <div class="max-w-7xl mx-auto">
       <div
-        class="text-[#53414c] flex flex-col items-center justify-center address"
+        class="text-[#5C5C5C] flex flex-col items-center justify-center address"
       >
         <ul class="mt-4">
           <li
-            class="flex items-center text-[#54595f] c-pointer"
+            class="flex items-center text-[#5C5C5C] c-pointer"
             onclick="window.open('https://maps.app.goo.gl/phQWt93kvV48JfJK9', '_blank')"
           >
-            <span class="text-lg mr-10">🏢</span>
+            <i class="pi pi-home fs-13 mr-6 text-[#a7d8de]"></i>
             247/3 Kammala Kathu District Phuket 83150. Thailand
           </li>
-          <li class="flex items-center text-[#54595f] c-pointer">
+          <li class="flex items-center text-[#5C5C5C] c-pointer">
             <a href="tel:+66614055575" class="hover:text-blue-500">
-              <span class="text-lg mr-10">📞</span>
+              <i class="pi pi-phone fs-13 mr-6 text-[#a7d8de]"></i>
               (+66) 61 405 5575
             </a>
             <a
               href="https://api.whatsapp.com/message/XZMZJWGWK4FAO1"
               target="_blank"
-              class="hover:text-green-500 ml-10"
+              class="hover:text-green-500 ml-2 flex items-center"
             >
+              <img
+                src="@/assets/images/WhatsApp.webp"
+                style="width: 25px"
+                alt=""
+              />
               Chat on WhatsApp
             </a>
           </li>
-          <li class="flex items-center text-[#54595f] c-pointer">
+          <li class="flex items-center text-[#5C5C5C] c-pointer">
             <a
               href="mailto:contact.moonbeachvilla@gmail.com"
               class="hover:text-blue-500"
             >
-              <span class="text-lg mr-10">✉️</span>
+              <i class="pi pi-envelope fs-13 mr-6 text-[#a7d8de]"></i>
               contact.moonbeachvilla@gmail.com
             </a>
           </li>
 
-          <li class="flex items-center text-[#54595f] c-pointer">
+          <li class="flex items-center text-[#5C5C5C] c-pointer">
             <a
               href="https://line.me/R/ti/p/@613cxrry"
               target="_blank"
               class="flex hover:text-blue-500"
             >
-              <span class="text-lg mr-6">
+              <span class="mr-6">
                 <img src="@/assets/images/line-logo.png" style="width: 25px" />
               </span>
               @moonbeachvilla
             </a>
           </li>
 
-          <li class="flex items-center text-[#54595f] c-pointer">
+          <li class="flex items-center text-[#5C5C5C] c-pointer">
             <a
               href="https://www.facebook.com/people/Moon-Beach-Villa-Patong/61574416492308/"
               target="_blank"
               class="hover:text-blue-500"
             >
-              <i class="pi pi-facebook fs-13 mr-6"></i>
+              <i class="pi pi-facebook fs-13 mr-6 text-[#a7d8de]"></i>
               Moon Beach Villa Patong
             </a>
           </li>
 
-          <li class="flex items-center text-[#54595f] c-pointer">
+          <li class="flex items-center text-[#5C5C5C] c-pointer">
             <a
               href="https://www.instagram.com/moonbeachvilla/"
               target="_blank"
               class="hover:text-blue-500"
             >
-              <i class="pi pi-instagram fs-13 mr-6"></i>
+              <i class="pi pi-instagram fs-13 mr-6 text-[#a7d8de]"></i>
               moonbeachvilla
             </a>
           </li>
@@ -92,7 +97,7 @@
       <div>
      
         <div class="text-center">
-          <h2 class="title text-[#52414B]">{{ $t("primeLocationTitle") }}</h2>
+          <h2 class="title text-[#5C5C5C]">{{ $t("primeLocationTitle") }}</h2>
           <div class="gold-line"></div>
         </div>
        
@@ -208,7 +213,7 @@
     <div class="max-w-5xl mx-auto">
       <!-- Title -->
       <div class="mb-6">
-        <h2 class="title my-30">Where to find us</h2>
+        <h2 class="title my-30 text-[#5C5C5C]">Where to find us</h2>
         <div class="gold-line mx-auto mt-2"></div>
       </div>
 
@@ -298,7 +303,7 @@ const submitForm = () => {
 .gold-line {
   width: 15%;
   height: 2px;
-  background: #b59771;
+  background: #a7d8de;
   margin: 1rem auto 2rem;
   @media (max-width: 768px) {
     width: 120px;

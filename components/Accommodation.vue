@@ -96,7 +96,7 @@
                 </ul>
 
                 <button
-                  class="border-1 border-white bg-[#53414c] text-white transition mt-5 btn-availability"
+                  class="border-1 border-white bg-[#c4a47c] text-white transition mt-5 btn-availability"
                 >
                   <a href="tel:+66614055575">
                     <i class="pi pi-phone text-lg"></i>
@@ -113,7 +113,7 @@
     <div class="text-center mt-10">
       <NuxtLink
         to="/layouts"
-        class="inline-block border border-white px-16 py-10 bg-[#53414c] text-white transition text-lg fw-400 text-center"
+        class="inline-block border border-white px-16 py-10 bg-[#c4a47c] text-white transition text-lg fw-400 text-center"
       >
         VIEW ALL LAYOUTS
       </NuxtLink>
@@ -148,7 +148,7 @@ const apartments = ref([
   background-image: url("@/assets/images/apartment-background-1.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #404040;
+  color: #5C5C5C;
   padding: 5rem 14rem 13rem 14rem;
 
   @media (max-width: 768px) {
@@ -182,7 +182,7 @@ const apartments = ref([
 .gold-line {
   width: 15%;
   height: 2px;
-  background: #b59771;
+  background: #a7d8de;
   margin: 1rem auto 2rem;
   @media (max-width: 768px) {
     width: 120px;
